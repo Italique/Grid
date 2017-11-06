@@ -1,0 +1,127 @@
+
+/* Nammed tracks example */
+.characters-finn { 
+    grid-area: hero; 
+    border: 2px solid #00ADE3;
+    background-color: #FFFFFF;
+}
+
+.characters-beemo { 
+    grid-area: sidekick-a; 
+    border: 2px solid #BAE0CD;
+    background-color: #23B1A5;
+}
+
+.characters-jack { 
+    grid-area: sidekick-b; 
+    border: 2px solid #FCB823;
+    background-color: #FCB82;
+}
+
+.characters-marceline { 
+    grid-area: minor-a; 
+    border: 2px solid #020306;
+    background-color: #EEF1F3;
+}
+
+.characters-missrainicorn { 
+    grid-area: minor-b;
+    border: 2px solid #E0ABCE;
+    background-color: #F8F390;
+}
+
+.characters-princessechewingum { 
+    grid-area: minor-c; 
+    border: 2px solid #E7CEE3;
+    background-color: #F299BF;
+}
+
+.characters-princessedesflammes { 
+    grid-area: minor-d; 
+    border: 2px solid #FFA300;
+    background-color: #FF410B;
+}
+
+.characters-princesselumpyspace {
+    grid-area: minor-e;
+    border: 2px solid #BB9DC8;
+    background-color: #FFDF74;
+}
+
+.characters-roidesglaces { 
+    grid-area: minor-f;
+    border: 2px solid #A3D8F5;
+    background-color: #0072BC;
+}
+
+
+
+.characters {
+    font: 1.2em Helvetica, Arial;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "hero"
+        "sidekick-a"
+        "sidekick-b" 
+        "minor-a"
+        "minor-b" 
+        "minor-c"
+        "minor-d"
+        "minor-e"
+        "minor-f"
+        ;
+}
+
+.characters > div {
+    padding: 15px;
+}
+
+@media (min-width: 640px){
+  .characters {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "hero sidekick-a"
+        "sidekick-b minor-a"
+        "minor-b minor-c"
+        "minor-d minor-e"
+        "minor-f ."
+        ;  
+    }
+}
+
+@media (min-width: 768px){
+    .characters {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "hero sidekick-a"
+        "sidekick-b minor-a"
+        "minor-b minor-c"
+        "minor-d minor-e"
+        "minor-f ."
+        ;  
+    }
+}
+
+@media (min-width: 1024px){
+    .characters {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "hero sidekick-a sidekick-b"
+        "minor-a minor-b minor-c"
+        "minor-d minor-e minor-f"
+        ;  
+    }
+}
+
+@media (min-width: 1280px){
+    .characters {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "hero sidekick-a sidekick-b minor-a"
+        "minor-b minor-c minor-d minor-e"
+        "minor-f . . ."
+        ;  
+    }
+}
