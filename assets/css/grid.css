@@ -80,6 +80,10 @@
     font-weight: bold;
 }
 
+.characters > div:hover {
+    font-weight: lighter;
+}
+
 @media (min-width: 640px){
   .characters {
     grid-template-columns: 1fr 1fr;
