@@ -120,8 +120,9 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
         "hero sidekick-a sidekick-b minor-a"
-        "minor-b minor-c minor-d minor-e"
-        "minor-f . . ."
+        "minor-c minor-c sidekick-b minor-e"
+        "minor-f minor-f minor-f minor-e"
+        "minor-d minor-b minor-b minor-b"
         ;  
     }
 }
