@@ -74,15 +74,23 @@
         ;
 }
 
+
+
 .characters > div {
-    padding: 15px;
+    padding: 25px;
     text-align: center;
     font-weight: bold;
 }
 
 .characters > div:hover {
     font-weight: lighter;
+    border-radius: 40px;
+    -webkit-transition: border-radius 2s, -webkit-transform 1s; /* Safari */
+    transition: border-radius 2s, transform 1s;
+    transform: rotate(2deg);
 }
+
+
 
 @media (min-width: 640px){
   .characters {
