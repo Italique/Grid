@@ -76,6 +76,8 @@
 
 .characters > div {
     padding: 15px;
+    text-align: center;
+    font-weight: bold;
 }
 
 @media (min-width: 640px){
